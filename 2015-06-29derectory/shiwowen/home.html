@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <style>
+    	html{
+    		height: 100%;
+    	}
+    	body{
+    		height: 100%;
+    		background: #ddd;
+    	}
+		.main{
+			width: 900px;
+            min-height: 900px;
+			margin: 0 auto;
+		}
+        .file{
+            width: 95%;
+            margin: 10px 2.5%;
+        }
+        .title{
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+        .sub-directory{
+            height: 160px;           
+            text-align: center;
+            background: #fff;
+        }
+        .sub-directory .col-md-4{
+            padding: 5%;
+            height: 40px;
+        }
+        .list-group-item:nth-child(n+2){
+            color: #337ab7;
+        }
+        .list-group-item:nth-child(n+5){
+            display: none;
+        }
+        .list-group-item:nth-last-child(1){
+            display: block;
+        }
+        .more{
+            color:#f00 !important;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+    <script>
+        $(function(){
+            var hasShow = false;
+            $("body").on("click",".more",function(){ 
+                if(!hasShow){
+                    $(this).prevAll().addClass("show");
+                    $(this).html("collapse");
+                }else{
+                    $(this).prevAll().removeClass("show");
+                    $(this).html("more...");
+                }          
+                hasShow =  !hasShow;
+            });
+        });
+    </script>
+</head>
+<body>
+	<div class="main">
+		<div class="col-md-4">
+             <div class="file">                
+               <ul class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Folder                   
+                        <span class="badge">3</span>    
+                    </a>
+                    <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">1</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">2</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">3</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         file                        
+                    </a>
+                     <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">0</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         file                        
+                    </a>
+                    <a href="#" class="list-group-item more">
+                         more...                       
+                    </a>
+                </ul>       
+             </div>     
+        </div>      
+        <div class="col-md-4">
+             <div class="file">                
+               <ul class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Folder                   
+                        <span class="badge">3</span>    
+                    </a>
+                    <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">0</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         file                        
+                    </a>
+                    <a href="#" class="list-group-item more">
+                         more...                       
+                    </a>
+                </ul>       
+             </div>     
+        </div>      
+        <div class="col-md-4">
+             <div class="file">                
+               <ul class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Folder                   
+                        <span class="badge">3</span>    
+                    </a>
+                    <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">0</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         file                        
+                    </a>
+                    <a href="#" class="list-group-item more">
+                         more...                       
+                    </a>
+                </ul>       
+             </div>     
+        </div>      
+        <div class="col-md-4">
+             <div class="file">                
+               <ul class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Folder                   
+                        <span class="badge">3</span>    
+                    </a>
+                    <a href="#" class="list-group-item">
+                         folder
+                         <span class="badge">0</span>                         
+                    </a>
+                    <a href="#" class="list-group-item">
+                         file                        
+                    </a>
+                    <a href="#" class="list-group-item more">
+                         more...                       
+                    </a>
+                </ul>       
+             </div>     
+        </div>       
+	</div>
+</body>
+<script>
+    $(function(){        
+        var url = "";
+        $.get("/home",function(data){
+            console.log(data);
+        });
+    });
+</script>
+</html>
