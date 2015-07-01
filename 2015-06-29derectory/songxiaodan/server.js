@@ -13,43 +13,51 @@ http.createServer(function (req, res) {
      * 3.正斜杠 和 反斜杠 转换
      * 4.如果以斜杠结尾，保留斜杠
      **/
-    if (req.url === '/') {
+    console.log(req.url);
+    if (req.url !== '/favicon.ico' && req.url === '/') {
         res.writeHead(200, {
-            'Content-Type': 'text/html' });
+            'Content-Type': 'text/html;charset=utf-8' });
         createCon('./', res);
+    } else {
+        res.end('404');
     }
-    setTimeout(function(){
-        res.end('3');
-    },2000);
 }).listen(7777);
 
 function createCon(url, res) {
     url = path.normalize(url);
-    fs.readdir(url, function (err, files) {
-        if (err) {
-            console.log('31- err');
-        } else {
-            console.log(files);
-            files.forEach(function(file){
-                if (file[0] === '.') {
-                    // 因为node中的forEach是回调函数，所以用return实现循环中continue功能
-                    return;
-                }
-                fs.stat(path.join(url, file), function (err,stat) {
-                    var object  = {};
-                    if (stat.isDirectory()){
-                        // 是文件夹的话，显示文件夹，继续深究
-                        res.write('<div>' + file + '</div>');
-                        var deepUrl = url + '/' + file;
-                        createCon(deepUrl, object);
-                    } else  {
-//                      是文件，显示文件
-                        res.write('<a>' + file + '</a>');
+    _createCon(url, res);
+
+    setTimeout(function(){
+        res.end('<b>成功了，请点击链接查看文件内容吧</b>', 'utf8');
+    },1000);
+    var i = 0;
+    function _createCon(url, res) {
+        ++i;
+        fs.readdir(url, function (err, files) {
+            if (err) {
+                console.log('31- err');
+            } else {
+                res.write('<br><div>第' + i + '级目录</div>', 'utf8');
+                files.forEach(function(file){
+                    if (file[0] === '.') {
+                        // 因为node中的forEach是回调函数，所以用return实现循环中continue功能
+                        return;
                     }
+                    fs.stat(path.join(url, file), function (err,stat) {
+                        if (stat.isDirectory()){
+                            // 是文件夹的话，显示文件夹，继续深究
+                            res.write('<div>' + file + '</div>', 'utf8');
+                            var deepUrl = url + '/' + file;
+                            _createCon(deepUrl, res);
+                        } else  {
+    //                      是文件，显示文件
+                            res.write('<a href="' + path.join(url, file) + '">' + file + '</a><br>', 'utf8');
+                        }
+                    });
                 });
-            });
-        }
-    });
+            }
+        });
+    }
 }
 
 
