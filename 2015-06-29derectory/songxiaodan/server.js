@@ -23,10 +23,10 @@ http.createServer(function (req, res) {
 
 //        createCon('./', res);
         if (req.url !== '/favicon.ico') {
-            fs.readFileSync('./webApp/c/2.txt', { encoding: null, flag: 'r' }, function (err, data) {
+            console.log(req.url);
+            fs.readFile('.' + req.url, { encoding: null, flag: 'r' }, function (err, data) {
                 if (err) throw err;
                 res.write('222', 'utf8');
-                console.log(data);
             });
 //            fs.readFileSync('.' + req.url, { encoding: null, flag: 'r' }, function (err, data) {
 //                if (err) throw err;
