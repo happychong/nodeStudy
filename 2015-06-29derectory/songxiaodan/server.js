@@ -13,13 +13,31 @@ http.createServer(function (req, res) {
      * 3.正斜杠 和 反斜杠 转换
      * 4.如果以斜杠结尾，保留斜杠
      **/
-    console.log(req.url);
-    if (req.url !== '/favicon.ico' && req.url === '/') {
+    if (req.url === '/') {
         res.writeHead(200, {
             'Content-Type': 'text/html;charset=utf-8' });
         createCon('./', res);
     } else {
-        res.end('404');
+        res.writeHead(200, {
+            'Content-Type': 'text/html;charset=utf-8' });
+
+//        createCon('./', res);
+        if (req.url !== '/favicon.ico') {
+            fs.readFileSync('./webApp/c/2.txt', { encoding: null, flag: 'r' }, function (err, data) {
+                if (err) throw err;
+                res.write('222', 'utf8');
+                console.log(data);
+            });
+//            fs.readFileSync('.' + req.url, { encoding: null, flag: 'r' }, function (err, data) {
+//                if (err) throw err;
+//                console.log('1');
+//                res.write(data, 'utf8');
+//            });
+    //        res.end('404');
+            setTimeout(function(){
+                res.end();
+            },1000);
+        }
     }
 }).listen(7777);
 
