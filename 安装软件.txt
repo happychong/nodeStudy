@@ -1,0 +1,2 @@
+// mongodb обтьб╥╬╤
+http://downloads.mongodb.com/win32/mongodb-win32-x86_64-enterprise-windows-64-2.6.4-signed.msi?_ga=1.238525191.607472782.1411452026

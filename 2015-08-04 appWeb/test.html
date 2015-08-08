@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    (function () {
+        var handler = function (e) {
+            if (e.tartet == document) {
+                console.log('handler go on');
+            }
+        };
+        document.addEventListener('click', handler);
+        window.check = function (arg) {
+            if (arg == handler) {
+                alert('win');
+            }
+        }
+    })();
+
+
+    /*var e = document.createEvent('Event');
+    e.initEvent('click', true, true);
+    e.arg = null;
+    Object.defineProperty(
+            e.prototype,
+        'target',
+        {
+            get: function () {
+                debugger;
+                window.abc = arguments.callee.caller;
+            }
+        }
+    );
+    document.dispatchEvent(e);
+    e.target = 5;
+//    console.log(abc);
+    check(e.arg)*/
+</script>
+
+</body>
+</html>

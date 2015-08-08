@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="bootleModule">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="#/reg">注册</a></li>
+        <li><a href="#/throw">扔瓶子</a></li>
+        <li><a href="#/pick">捞瓶子</a></li>
+    </ul>
+    <div ng-view></div>
+    <script>
+        var app = angular.module('bootleModule', ['ngRoute'])
+//        app.run(function ($location) {
+//            $location.path('/reg');
+//        });
+//        设置路由
+        app.config(function ($routeProvider) {
+            $routeProvider.when('/reg', {
+                templateUrl: 'reg.html',
+                controller: 'regCtrl'
+            }).when('/throw', {
+                templateUrl: 'throw.html',
+                controller: 'throwCtrl'
+            }).when('/view', {
+                templateUrl: 'view.html',
+                controller: 'viewCtrl'
+            }).when('/pick', {
+                templateUrl: 'pick.html',
+                controller: 'pickCtrl'
+            }).otherwise({
+                redirectTo: '/reg'
+            })
+        });
+//        设置 控制器
+        app.controller('regCtrl', function ($scope, $http, $location) {
+            $scope.reg = function () {
+                $http({
+                    url: '/reg',
+                    method: 'POST'
+                }).success(function (data, status) {
+                    console.log(data);
+                    $location.path('/throw');
+                })
+            }
+        });
+//        定义welcome
+        app.factory('welcome', function () {
+            return {
+                hello: function () {
+                    return 'welcom to 漂流瓶！'
+                }
+            }
+        })
+//        welcome 自己声明 注册 服务
+        app.controller('throwCtrl', function (welcome, $scope, $http, $location) {
+//            scope 的hello 调用的是welcome 的 hello 方法
+            $scope.hello = welcome.hello();
+            $scope.throw = function () {
+                $http({
+                    url: '/throw',
+                    method: 'POST'
+                }).success(function (data, status) {
+                    console.log(data)
+                    $location.path('/pick');
+                })
+            }
+        });
+        app.controller('pickCtrl', function ($scope, $http, $location) {
+            $scope.pick = function () {
+                $http({
+                    url: '/pick',
+                    method: 'POST'
+                }).success(function (data, status) {
+                    console.log(data)
+                    $location.path('/pick');
+                })
+            }
+        });
+    </script>
+</body>
+</html>
