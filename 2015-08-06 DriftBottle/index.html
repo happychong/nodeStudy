@@ -19,7 +19,7 @@
 //            $location.path('/reg');
 //        });
 //        设置路由
-        app.config(function ($routeProvider) {
+        app.config(function ($routeProvider, welcomeProvider) {
             $routeProvider.when('/reg', {
                 templateUrl: 'reg.html',
                 controller: 'regCtrl'
@@ -34,7 +34,9 @@
                 controller: 'pickCtrl'
             }).otherwise({
                 redirectTo: '/reg'
-            })
+            });
+//            welcome 定义方式3 附带修改部分
+            welcomeProvider.msg = 'welcome 定义方式3';
         });
 //        设置 控制器
         app.controller('regCtrl', function ($scope, $http, $location) {
@@ -48,14 +50,35 @@
                 })
             }
         });
-//        定义welcome
-        app.factory('welcome', function () {
-            return {
-                hello: function () {
-                    return 'welcom to 漂流瓶！'
+//        定义welcome  方式1 - 单例模式，不可单独配置
+//        调用工厂方法，得到返回的对象
+//        app.factory('welcome', function () {
+//            return {
+//                hello: function () {
+//                    return 'welcome to 漂流瓶！'
+//                }
+//            }
+//        });
+//        定义welcome  方式2 - 单例模式，不可单独配置
+//        调用构造函数 通过 new 来调用
+//        app.service('welcome', function () {
+//            this.hello = function () {
+//                return 'welcome to 定义方法2，service方法.'
+//            }
+//        });
+//        定义welcome  方式3 - 可单独配置
+        app.provider('welcome', function () {
+            this.msg = '';
+            this.$get = function () {
+                var self = this;
+                return {
+                    hello: function () {
+                        return self.msg
+                    }
                 }
             }
-        })
+        });
+
 //        welcome 自己声明 注册 服务
         app.controller('throwCtrl', function (welcome, $scope, $http, $location) {
 //            scope 的hello 调用的是welcome 的 hello 方法
