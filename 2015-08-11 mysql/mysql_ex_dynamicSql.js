@@ -21,7 +21,10 @@ conn.query(sql, function (err, rows) {
     conn.destroy();
 });
 
-var queryUser = 'select * from user where user_name=? and password=?';
-conn.query(queryUser, ['admin', '123456'], function (err, rows) {
+//??  --  实体的名字，表明 字段名   被以下['id', 'user_name']替换
+//？  --  参数的名字     被以下'admin', '123456'替换
+
+var queryUser = 'select ?? from user where user_name=? and password=?';
+conn.query(queryUser, [['id', 'user_name'], 'admin', '123456'], function (err, rows) {
     console.log('queryUser:', rows);
 });
