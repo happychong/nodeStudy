@@ -9,15 +9,14 @@ var conn = mysql.createConnection({
     port: '3306',
     user: 'root',
 //    没设置密码，所以不写password了
-    database: 'test',
-    charset: 'utf-8'
+    database: 'test'
 //    还可以有charset、timeZone、connectTimeout、stringifyObjects、typeCast、dateStrings、debug
 //             编码      时区
 });
 
 conn.query('select * from course', function (err, rows, fields) {
 // 这里好像因为没安装mysql软件，所以报错
-    console.log(arguments);
+    console.log(rows[0].price);
 //    关闭连接
     conn.destroy();
 });
