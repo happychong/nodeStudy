@@ -2,7 +2,7 @@
  * Created by v_songxiaodan on 2015/8/13.
  */
 var http = require('http');
-var RedisSession = require('./Redis Session');
+var RedisSession = require('./Redis_Session');
 var url = require('url');
 
 var redisSession = new RedisSession({});
