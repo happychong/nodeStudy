@@ -80,7 +80,7 @@ RedisSession.prototype.wrap = function (req, res, callback) {
 };
 RedisSession.prototype.shutdown = function () {
     this._redisClient.quit();
-}
+};
 
 /**
  * 创建新session对象
