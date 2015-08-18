@@ -1,4 +1,7 @@
 # 此为注释 – 将被 Git 忽略
 .idea
 .idea/
-*.idea/*.*
+.idea/*.*
+*.xml
+~$*.*
+
