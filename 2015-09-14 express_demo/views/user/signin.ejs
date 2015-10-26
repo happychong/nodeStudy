@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>登录</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/bootstrap-3.3.5/dist/css/bootstrap.min.css">
+</head>
+<body>
+<% include ../_include_/header %>
+<h1>登录</h1>
+<form action="/user/signin" method="post">
+    <table class="table">
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="username" id="username"></td>
+        </tr>
+        <tr>
+            <td>密&nbsp;&nbsp;码：</td>
+            <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="signinBtn">登录</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<% include ../_include_/footer %>
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<script src="/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#signinBtn').click(function () {
+            if ($('#username').val() === '') {
+                alert('用户名不能为空。');
+                return;
+            }
+            if ($('#password').val() === '') {
+                alert('密码不能为空。');
+                return;
+            }
+            $('form').submit();
+        })
+    })
+</script>
+</body>
+</html>

@@ -6,7 +6,9 @@ var http = require('http'),
     fs = require('fs'),
     url = require('url'),
     util = require('util'),
-    path = require('path');
+    path = require('path'),
+    PathUtil = require('./pathUtil'),
+    MiddleWare = require('./middleware');
 
 function WebServer(options) {
     if (!options || !options.baseDir) {
@@ -27,6 +29,8 @@ function WebServer(options) {
         }
     }
     this._route_handler = {};
+    this._regexp_router_handler = [];
+    this._middleware = new MiddleWare();
 }
 
 WebServer.prototype._showPage = function (res, fullpath) {
@@ -76,12 +80,46 @@ WebServer.prototype._showStaticResouce = function (req, res) {
 WebServer.prototype.start = function (port, cb) {
     var self = this;
     http.createServer(function (req, res) {
-        var urlObj = url.parse(req.url);
-        if (self._route_handler[urlObj.pathname]) {
-            self._route_handler[urlObj.pathname](req, res);
-        } else {
-            self._showStaticResouce(req, res);
-        }
+        res.setTimeout(30000);
+        ///////处理session
+        self._middleware.run(req, res, function () {
+            var urlObj = url.parse(req.url);
+            var isUrlMatchRegexp = false;
+            for (var i = 0; i < self._regexp_router_handler.length; i++) {
+                var match;
+                self._regexp_router_handler[i].path.lastIndex = 0;
+                if (null !== (match = self._regexp_router_handler[i].path.exec(urlObj.pathname))) {
+                    if (!self._regexp_router_handler[i].method || self._regexp_router_handler[i].method == req.method) {
+                        isUrlMatchRegexp = true;
+                        var params = self._regexp_router_handler[i].params;
+                        var pathParams = {};
+                        for (var j = 0; j < params.length; j++) {
+                            pathParams[params[j]] = match[j + 1];
+                        }
+                        req.pathParams = pathParams;
+                        process.nextTick(function () {
+                            self._regexp_router_handler[i].cb(req, res);
+                        });
+                        break;
+                    } else {
+                        res.writeHead(403);
+                        res.end(http.STATUS_CODES[403]);
+                    }
+                }
+            }
+            if (!isUrlMatchRegexp) {
+                if (self._route_handler[urlObj.pathname]) {
+                    if (self._route_handler[urlObj.pathname].method == req.method) {
+                        self._route_handler[urlObj.pathname].cb(req, res);
+                    } else {
+                        res.writeHead(403);
+                        res.end(http.STATUS_CODES[403]);
+                    }
+                } else {
+                    self._showStaticResouce(req, res);
+                }
+            }
+        });
     }).listen(port, function () {
         cb.call();
     });
@@ -95,20 +133,33 @@ WebServer.prototype._showErrPage = function (res, statusCode) {
     res.writeHead(statusCode, {"Content-Type": "text/html"});
     res.end(http.STATUS_CODES[statusCode]);
 }
-WebServer.prototype.route = function (path, cb) {
-    var paramRegex = /{(\S+?)}/g;
-    var isHaveParam = false;
-    var match;
-    while(null != (match = paramRegex.exec(path))) {
-//        有参数  /movie/23456543
-        isHaveParam = true;
-        path.replace(match[0], '(\\S+)');
-    }
-    if (isHaveParam) {
-        var pathReg = new RegExp('^' + path.replace(/\//g. '\\/') + '$', );
+WebServer.prototype.route = function (path, cb, method) {
+    var pathObj = PathUtil.parse(path);
+    if (pathObj.path instanceof RegExp) {
+        pathObj.cb = cb;
+        if (method) {
+            pathObj.method = method;
+        }
+        this._regexp_router_handler.push(pathObj);
     } else {
-
+        this._route_handler[path] = {
+            cb: cb
+        };
+        if (method) {
+            this._route_handler[path].method = method;
+        }
     }
-    this._route_handler[path] = cb;
 }
+WebServer.prototype.get = function (path, cb) {
+    this.route(path, cb, 'GET');
+}
+
+WebServer.prototype.post = function (path, cb) {
+    this.route(path, cb, 'POST');
+}
+
+WebServer.prototype.use = function (cb) {
+    this._middleware.use(cb);
+}
+
 module.exports = WebServer;
