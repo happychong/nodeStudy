@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var article = require('./routes/article');
+var view = require('./routes/view');
 
 var redisSession = require('./Redis_Session.js');
 
@@ -20,6 +22,9 @@ app.set('view engine', 'ejs');
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(redisSession());
+app.use(require('./protectedUrl')({
+  protectedUrl: ['/article']
+}));
 app.use(logger('dev'));
 
 app.use(bodyParser.json());
@@ -31,6 +36,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/user', users);
+app.use('/article', article);
+app.use('/view', view);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

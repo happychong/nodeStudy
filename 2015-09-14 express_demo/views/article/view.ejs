@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title><%=article.title%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/bootstrap-3.3.5/dist/css/bootstrap.min.css">
+</head>
+<body>
+<% include ../_include_/header %>
+
+<div class="container content-container">
+    <div class="row">
+        <div class="=col-lg-9">
+            <h3><%=article.title%></h3>
+            <h5>
+                <%=article.username%> 发布于 <%=article.post_time%>
+                <%if (article.username == user.username) {%>
+                    <a href="/article/edit/<%=article.id%>">编辑</a>
+                    <a id="delArticle" articleId="<%=article.id%>">删除</a>
+                <% }%>
+                阅读：<%=article.read_cnt%> 次
+            </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="=col-lg-9">
+            <div class="col-lg-7">
+                <%=article.content%>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ../_include_/footer %>
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<script src="/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+<script>
+    $('#delArticle').click(function () {
+        var that = this;
+        var isContinue = confirm('真的要删除吗？');
+        if (isContinue) {
+            $.ajax({
+                type: 'POST',
+                url: '/article/delete',
+                data: {data: that.getAttribute('articleId')},
+                success: function () {
+                    window.opener.location.href = window.opener.location.href;
+                    window.close();
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

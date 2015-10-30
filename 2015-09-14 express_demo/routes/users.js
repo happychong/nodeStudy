@@ -3,6 +3,8 @@ var router = express.Router();
 
 var db = require('../db.js');
 var crypto = require('crypto');
+var db = require('../db');
+var moment = require('moment');
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
@@ -19,7 +21,16 @@ router.get('/signin', function (req, res) {
     } else {
         locals.user = {};
     }
-    res.render('user/signin', locals);
+    db.findArticlesByPage(1, 5, function (err, rows) {
+        if (err) {
+            next(err);
+        } else {
+            locals.articles = rows || [];
+            res.render('user/signin', locals);
+            //res.render('index');
+
+        }
+    });
 });
 
 router.post('/signin', function (req, res) {
@@ -31,7 +42,8 @@ router.post('/signin', function (req, res) {
                 db.queryUserByUsernameAndPassword(
                     {
                         username: req.body.username,
-                        password: req.body.password
+                        //password: req.body.password
+                        password: crypto.Hash('md5').update(req.body.password).digest('hex')
                     },
                     function (err, ret) {
                         if (err) {
@@ -53,7 +65,21 @@ router.post('/signin', function (req, res) {
                                                         username: ret[0].username
                                                     }
                                                 };
-                                                res.render('index', locals);
+                                                db.findArticlesByPage(1, 5, function (err, result) {
+                                                    if (err) {
+                                                        next(err);
+                                                    } else {
+                                                        for (var i = 0; i < result.articles.length; i++) {
+                                                            result.articles[i].post_time = moment(result.articles[i].post_time).format('YYYY-MM-DD HH:mm:ss')
+                                                        }
+                                                        locals.articles = result.articles || [];
+                                                        locals.totalCount = result.totalCount;
+                                                        locals.totalPage = result.totalPage;
+                                                        locals.curPage = 1;
+                                                        res.render('index', locals);
+                                                        //res.render('index');
+                                                    }
+                                                });
                                             }
                                         });
                                     }
@@ -115,8 +141,8 @@ router.post('/signup', function (req, res, next) {
                 db.addUser(
                     {
                         username: req.body.username,
-                        //password: crypto.createHash('md5').updata(req.body.password)
-                        password: req.body.password
+                        password: crypto.Hash('md5').update(req.body.password).digest('hex')
+                        //password: req.body.password
                     },
                     function (err, ret) {
                         if (err) {
@@ -170,13 +196,26 @@ router.get('/logout', function (req, res) {
         title: '首页',
         user: {}
     };
-    console.error('Line----------173');
     res.session.remove('username', function (err) {
         if (err) {
             next(err);
         } else {
-            console.error('Line----------177');
-            res.render('index', locals);
+            db.findArticlesByPage(1, 5, function (err, result) {
+                if (err) {
+                    next(err);
+                } else {
+                    for (var i = 0; i < result.articles.length; i++) {
+                        result.articles[i].post_time = moment(result.articles[i].post_time).format('YYYY-MM-DD HH:mm:ss')
+                    }
+                    locals.articles = result.articles || [];
+                    locals.totalCount = result.totalCount;
+                    locals.totalPage = result.totalPage;
+                    locals.curPage = 1;
+
+                    res.render('index', locals);
+
+                }
+            });
         }
     });
 });

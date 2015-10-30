@@ -135,18 +135,19 @@ Session.prototype.set = function (key, value, next) {
 Session.prototype.remove = function (key, cb) {
     if (key) {
         var self = this;
-        console.error('Line---------------------------138', this._id);
         this._redis.hdel(this._id, key, function (err) {
             if (err) throw err;
             self._renew();
             cb(err);
         })
+    } else {
+        cb(err);
     }
-}
+};
 
 Session.prototype._add_all = function (data) {
     this._data = data;
-}
+};
 
 Session.prototype._renew = function () {
     this._redis.expire(this._id, this._expTime);

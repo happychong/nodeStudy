@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>编辑——<%=article.title%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/bootstrap-3.3.5/dist/css/bootstrap.min.css">
+</head>
+<body>
+<% include ../_include_/header %>
+<h1>改文章</h1>
+<form action="/article/edit/<%=article.id%>" method="post">
+    <table class="table">
+        <tr>
+            <td><input type="text" name="title" id="title" size="80" value="<%if (article.title) {%><%=article.title%><%} else {%><%}%>">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea  name="content" id="content" rows="10" cols="80"><%=article.content%></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="postBtn">提交修改</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<% include ../_include_/footer %>
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<script src="/bootstrap-3.3.5/dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#postBtn').click(function () {
+            if ($('#title').val() === '') {
+                alert('标题不能为空。');
+                return;
+            }
+            if ($('#content').val() === '') {
+                alert('正文不能为空。');
+                return;
+            }
+            $('form').submit();
+        })
+    })
+</script>
+</body>
+</html>

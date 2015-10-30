@@ -8,9 +8,36 @@
 </head>
 <body>
 <% include _include_/header %>
-<h1><%= title %></h1>
-
 <p>Welcome to <%= title %></p>
+<hr>
+<div class="row">
+    <div class="col-lg-9">
+        <ul class="list-unstyled">
+            <%for (var i = 0; i < articles.length; i++) {%>
+                <li><p><a href="/view/<%=articles[i].id%>" target="_blank"><%=articles[i].title%></a> <%=articles[i].username%> 发布于 <%=articles[i].post_time%></p></li>
+            <%}%>
+        </ul>
+        <ul class="pagination">
+            <li <%if (totalPage > 1 && curPage == 1) {%>class="disabled"<%}%>><a href="<%if (totalPage > 1 && curPage == 1) {%>#<%} else {%>/view/page/<%=curPage - 1%><%}%>">&laquo;</a></li>
+
+
+            <%
+                var start, end;
+                start = Math.max(curPage - 2, 1);
+                end = Math.min(start + 4, totalPage);
+                if (end < curPage + 2) {
+                    start = Math.max(end - 4, 1);
+                }
+            %>
+            <%for (var i = start; i <= end; i++) {%>
+                <li <%if (i == curPage) {%>class="active" <%}%>><a href="<%if (i == curPage) {%>#<%} else {%>/view/page/<%=i%><%}%>"><%=i%></a> </li>
+            <%}%>
+            <li <%if (totalPage > 1 && curPage == totalPage) {%>class="disabled"<%}%>><a href="<%if (totalPage > 1 && curPage == totalPage) {%>#<%} else {%>/view/page/<%=curPage + 1%><%}%>">&raquo;</a>
+
+            <li class="btn-group-vertical"> 共 <%=articles.totalCount%> 篇文章</li>
+        </ul>
+    </div>
+</div>
 
 <% include _include_/footer.ejs %>
 <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>

@@ -1,0 +1,1556 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'moment' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json crypto@0.0.3 crypto is also the name of a node core module.
+6 silly cache add args [ 'moment', null ]
+7 verbose cache add spec moment
+8 silly cache add parsed spec { raw: 'moment',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'moment',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed moment@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'moment', range: '*', hasData: false }
+13 silly mapToRegistry name moment
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry http://npm.internal.baidu.com/
+16 silly mapToRegistry uri http://npm.internal.baidu.com/moment
+17 verbose addNameRange registry:http://npm.internal.baidu.com/moment not in flight; fetching
+18 verbose request uri http://npm.internal.baidu.com/moment
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 10:32:14
+21 verbose request id fa859cda463733c5
+22 http request GET http://npm.internal.baidu.com/moment
+23 http 200 http://npm.internal.baidu.com/moment
+24 verbose bad json <!doctype html>
+24 verbose bad json <html lang="en">
+24 verbose bad json <head>
+24 verbose bad json   <meta charset="utf-8">
+24 verbose bad json   <title>moment</title>
+24 verbose bad json
+24 verbose bad json     <meta name="description" content="Parse, validate, manipulate, and display dates">
+24 verbose bad json     <meta name="keywords" content="ender,l10n,i18n,validate,format,parse,time,date,moment">
+24 verbose bad json     <meta name="twitter:url" content="https://www.npmjs.com/package/moment">
+24 verbose bad json     <meta name="twitter:title" content="npm: moment">
+24 verbose bad json     <meta name="twitter:description" content="Parse, validate, manipulate, and display dates">
+24 verbose bad json
+24 verbose bad json   <meta http-equiv="cleartype" content="on" />
+24 verbose bad json
+24 verbose bad json   <meta name="apple-mobile-web-app-capable" content="no">
+24 verbose bad json   <meta name="description" content="npm is the package manager for javascript">
+24 verbose bad json   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+24 verbose bad json
+24 verbose bad json   <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="76x76" href="/static/images/touch-icons/apple-touch-icon-76x76.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="114x114" href="/static/images/touch-icons/apple-touch-icon-114x114.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="120x120" href="/static/images/touch-icons/apple-touch-icon-120x120.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="144x144" href="/static/images/touch-icons/apple-touch-icon-144x144.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="152x152" href="/static/images/touch-icons/apple-touch-icon-152x152.png">
+24 verbose bad json   <link rel="apple-touch-icon" sizes="180x180" href="/static/images/touch-icons/apple-touch-icon-180x180.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+24 verbose bad json   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+24 verbose bad json   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+24 verbose bad json   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+24 verbose bad json   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+24 verbose bad json   <link rel="icon" type="image/png" href="/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+24 verbose bad json   <link rel="icon" type="image/png" href="/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+24 verbose bad json   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+24 verbose bad json   <link rel="manifest" href="/static/images/touch-icons/manifest.json">
+24 verbose bad json   <link rel="shortcut icon" href="/static/images/touch-icons/favicon.ico">
+24 verbose bad json   <link rel="yandex-tableau-widget" href="/static/images/touch-icons/yandex-browser-manifest.json">
+24 verbose bad json   <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+24 verbose bad json   <meta name="apple-mobile-web-app-capable" content="yes">
+24 verbose bad json   <meta name="msapplication-TileColor" content="#cb3837">
+24 verbose bad json   <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+24 verbose bad json   <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+24 verbose bad json   <meta name="theme-color" content="#cb3837">
+24 verbose bad json
+24 verbose bad json   <link rel="canonical" href="https://www.npmjs.com/package/moment">
+24 verbose bad json   <link rel="stylesheet" media="all" href="/static/css/index.f6b740dc.css">
+24 verbose bad json   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
+24 verbose bad json   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+24 verbose bad json   <!--[if lt IE 9]>
+24 verbose bad json     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+24 verbose bad json   <![endif]-->
+24 verbose bad json
+24 verbose bad json   <script src="/static/js/index.min.97d1ee68.js"></script>
+24 verbose bad json
+24 verbose bad json </head>
+24 verbose bad json
+24 verbose bad json <body itemscope itemtype="http://schema.org/WebSite" data-crumb="tMXZw0OEFrXF_BYYUV_CLguFexGfvEUHgny4ITsvift">
+24 verbose bad json   <meta itemprop="url" content="https://www.npmjs.com/">
+24 verbose bad json
+24 verbose bad json     <div id="notification-banner" class="hidden">
+24 verbose bad json       <div class="container">
+24 verbose bad json         <hgroup>
+24 verbose bad json           <a href="/private-modules"
+24 verbose bad json             data-event-trigger="click"
+24 verbose bad json             data-event-name="private-modules-banner-signup-via-wombat">
+24 verbose bad json             <img src="/static/images/wombat-by-night.svg" alt="night wombat">
+24 verbose bad json           </a>
+24 verbose bad json           <h2>private npm is here.</h2>
+24 verbose bad json           <h3>publish unlimited private modules for just $7/month</h3>
+24 verbose bad json         </hgroup>
+24 verbose bad json         <a class="button" href="/private-modules"
+24 verbose bad json           data-event-trigger="click"
+24 verbose bad json           data-event-name="private-modules-banner-signup">sign up</a>
+24 verbose bad json         <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+24 verbose bad json       </div>
+24 verbose bad json       <a class="button banner-close button-banner-close icon-x" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks"><span class="a11y-only">close</span></a>
+24 verbose bad json     </div>
+24 verbose bad json
+24 verbose bad json     <nav>
+24 verbose bad json       <div class="container">
+24 verbose bad json         <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+24 verbose bad json         <a href="/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+24 verbose bad json         <a href="/enterprise">npm On-Site</a>
+24 verbose bad json         <a href="https://docs.npmjs.com">documentation</a>
+24 verbose bad json         <a href="http://blog.npmjs.org/">blog</a>
+24 verbose bad json         <a href="/npm-weekly">npm weekly</a>
+24 verbose bad json         <a href="/jobs">jobs</a>
+24 verbose bad json         <a href="/support">support</a>
+24 verbose bad json       </div>
+24 verbose bad json     </nav>
+24 verbose bad json
+24 verbose bad json   <header>
+24 verbose bad json     <div id='npm-logo'>
+24 verbose bad json       <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+24 verbose bad json
+24 verbose bad json     </div>
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json       <div id="user-info" class="anonymous">
+24 verbose bad json           <a href="/login"><img alt="" src="/static/images/wombat-avatar-small.png" /></a>
+24 verbose bad json           <ul class="single">
+24 verbose bad json               <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+24 verbose bad json           </ul>
+24 verbose bad json
+24 verbose bad json       </div>
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json     <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+24 verbose bad json       <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+24 verbose bad json       <div id="site-search-container">
+24 verbose bad json           <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+24 verbose bad json       </div>
+24 verbose bad json       <input type="submit" id="site-search-submit" />
+24 verbose bad json     </form>
+24 verbose bad json
+24 verbose bad json   </header>
+24 verbose bad json
+24 verbose bad json   <div class="container content">
+24 verbose bad json
+24 verbose bad json <div class="content-column">
+24 verbose bad json
+24 verbose bad json   <h1 class="package-name">
+24 verbose bad json     <a href="/package/moment">moment</a>
+24 verbose bad json       <i class="icon-public"></i>
+24 verbose bad json   </h1>
+24 verbose bad json   <p class="package-description">Parse, validate, manipulate, and display dates</p>
+24 verbose bad json
+24 verbose bad json   <form class="star">
+24 verbose bad json     <input type="hidden" name="name" value="moment">
+24 verbose bad json     <input id="star-input" type="checkbox" name="isStarred" value="true" >
+24 verbose bad json     <label for="star-input" class="icon-star"></label>
+24 verbose bad json     <div class="honey">
+24 verbose bad json       <label>If you are a robot, enter text here</label>
+24 verbose bad json       <input type="text" autocomplete="off" name="honey">
+24 verbose bad json     </div>
+24 verbose bad json
+24 verbose bad json       <input type="hidden" name="crumb" value="tMXZw0OEFrXF_BYYUV_CLguFexGfvEUHgny4ITsvift"/>
+24 verbose bad json   </form>
+24 verbose bad json
+24 verbose bad json   <div id="readme" class="markdown">
+24 verbose bad json       <p class="badge-only"><a href="https://gitter.im/moment/moment?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" class="badge"></a></p>
+24 verbose bad json <p><a href="https://npmjs.org/package/moment"><img src="http://img.shields.io/npm/v/moment.svg?style=flat" class="badge"></a> <a href="https://npmjs.org/package/moment"><img src="http://img.shields.io/npm/dm/moment.svg?style=flat" class="badge"></a> <a href="https://github.com/moment/moment/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" class="badge"></a> <a href="http://travis-ci.org/moment/moment"><img src="http://img.shields.io/travis/moment/moment/develop.svg?style=flat" class="badge"></a>
+24 verbose bad json <a href="https://coveralls.io/r/moment/moment?branch=master"><img src="https://coveralls.io/repos/moment/moment/badge.svg?branch=master" class="badge"></a></p>
+24 verbose bad json <p>A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.</p>
+24 verbose bad json <h2><a href="http://momentjs.com/docs/">Documentation</a></h2>
+24 verbose bad json <h2 id="user-content-port-to-es6-version-2-10-0" class="deep-link"><a href="#port-to-es6-version-2-10-0">Port to ES6 (version 2.10.0)</a></h2>
+24 verbose bad json <p>Moment 2.10.0 does not bring any new features, but the code is now written in
+24 verbose bad json es6 modules and placed inside <code>src/</code>. Previously <code>moment.js</code>, <code>locale/*.js</code> and
+24 verbose bad json <code>test/moment/*.js</code>, <code>test/locale/*.js</code> contained the source of the project. Now
+24 verbose bad json the source is in <code>src/</code>, temporary build (es5) files are placed under
+24 verbose bad json <code>build/umd/</code> (for running tests during development), and the <code>moment.js</code> and
+24 verbose bad json <code>locale/*.js</code> files are updated only on release.</p>
+24 verbose bad json <p>If you want to use a particular revision of the code, make sure to run
+24 verbose bad json <code>grunt transpile update-index</code>, so <code>moment.js</code> and <code>locales/*.js</code> are synced
+24 verbose bad json with <code>src/*</code>. We might place that in a commit hook in the future.</p>
+24 verbose bad json <h2 id="user-content-upgrading-to-2-0-0" class="deep-link"><a href="#upgrading-to-2-0-0">Upgrading to 2.0.0</a></h2>
+24 verbose bad json <p>There are a number of small backwards incompatible changes with version 2.0.0. <a href="https://gist.github.com/timrwood/e72f2eef320ed9e37c51#backwards-incompatible-changes">See the full descriptions here</a></p>
+24 verbose bad json <ul>
+24 verbose bad json <li>
+24 verbose bad json <p>Changed language ordinal method to return the number + ordinal instead of just the ordinal.</p>
+24 verbose bad json </li>
+24 verbose bad json <li>
+24 verbose bad json <p>Changed two digit year parsing cutoff to match strptime.</p>
+24 verbose bad json </li>
+24 verbose bad json <li>
+24 verbose bad json <p>Removed <code>moment#sod</code> and <code>moment#eod</code> in favor of <code>moment#startOf</code> and <code>moment#endOf</code>.</p>
+24 verbose bad json </li>
+24 verbose bad json <li>
+24 verbose bad json <p>Removed <code>moment.humanizeDuration()</code> in favor of <code>moment.duration().humanize()</code>.</p>
+24 verbose bad json </li>
+24 verbose bad json <li>
+24 verbose bad json <p>Removed the lang data objects from the top level namespace.</p>
+24 verbose bad json </li>
+24 verbose bad json <li>
+24 verbose bad json <p>Duplicate <code>Date</code> passed to <code>moment()</code> instead of referencing it.</p>
+24 verbose bad json </li>
+24 verbose bad json </ul>
+24 verbose bad json <h2><a href="https://github.com/moment/moment/blob/develop/CHANGELOG.md">Changelog</a></h2>
+24 verbose bad json <h2><a href="https://github.com/moment/moment/blob/develop/CONTRIBUTING.md">Contributing</a></h2>
+24 verbose bad json <p>We&apos;re looking for co-maintainers! If you want to become a master of time please
+24 verbose bad json write to <a href="https://github.com/ichernev">ichernev</a>.</p>
+24 verbose bad json <h2 id="user-content-license" class="deep-link"><a href="#license">License</a></h2>
+24 verbose bad json <p>Moment.js is freely distributable under the terms of the <a href="https://github.com/moment/moment/blob/develop/LICENSE">MIT license</a>.</p>
+24 verbose bad json
+24 verbose bad json   </div>
+24 verbose bad json
+24 verbose bad json </div>
+24 verbose bad json
+24 verbose bad json <div class="sidebar">
+24 verbose bad json
+24 verbose bad json     <div class="autoselect-wrapper npm-install icon-download">
+24 verbose bad json       <input type="text" value="npm install moment" readonly>
+24 verbose bad json     </div>
+24 verbose bad json
+24 verbose bad json 	<ul class="box">
+24 verbose bad json
+24 verbose bad json       <li class="last-publisher">
+24 verbose bad json           <a href="/~ichernev">
+24 verbose bad json             <img src="https://s.gravatar.com/avatar/9d76d1f8de8619bf86854417c348b974?size=100&amp;default=retro" alt="ichernev" />
+24 verbose bad json             <span>ichernev</span>
+24 verbose bad json           </a>
+24 verbose bad json           published
+24 verbose bad json           <span data-date="2015-07-28T04:45:30.983Z" data-date-format="relative">
+24 verbose bad json             2015-07-28T04:45:30.983Z
+24 verbose bad json           </span>
+24 verbose bad json       </li>
+24 verbose bad json
+24 verbose bad json     <li>
+24 verbose bad json       <strong>2.10.6</strong>
+24 verbose bad json       is the latest
+24 verbose bad json         of 37 releases
+24 verbose bad json     </li>
+24 verbose bad json
+24 verbose bad json       <li>
+24 verbose bad json         <a href="https://github.com/moment/moment">github.com/moment/moment</a>
+24 verbose bad json       </li>
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json       <li>
+24 verbose bad json           <a href="http://opensource.org/licenses/MIT">MIT</a>
+24 verbose bad json         <span> license</span>
+24 verbose bad json       </li>
+24 verbose bad json
+24 verbose bad json   </ul>
+24 verbose bad json
+24 verbose bad json     <h3 title="collaborators">
+24 verbose bad json       <a href="/package/moment/access">Collaborators</a>
+24 verbose bad json     </h3>
+24 verbose bad json
+24 verbose bad json     <ul class="humans collaborators">
+24 verbose bad json         <li>
+24 verbose bad json             <a href="/~timrwood" rel="tipsy" title="timrwood">
+24 verbose bad json                 <img src="https://s.gravatar.com/avatar/a511064517dfdf9ab9153843437ed2ff?size=100&amp;default=retro" alt="timrwood">
+24 verbose bad json             </a>
+24 verbose bad json         </li>
+24 verbose bad json         <li>
+24 verbose bad json             <a href="/~ichernev" rel="tipsy" title="ichernev">
+24 verbose bad json                 <img src="https://s.gravatar.com/avatar/9d76d1f8de8619bf86854417c348b974?size=100&amp;default=retro" alt="ichernev">
+24 verbose bad json             </a>
+24 verbose bad json         </li>
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json     </ul>
+24 verbose bad json
+24 verbose bad json     <h3>Stats</h3>
+24 verbose bad json     <ul class="box">
+24 verbose bad json
+24 verbose bad json         <li>
+24 verbose bad json           <strong class="pretty-number daily-downloads">145655</strong>
+24 verbose bad json           downloads in the last day
+24 verbose bad json         </li>
+24 verbose bad json         <li>
+24 verbose bad json           <strong class="pretty-number weekly-downloads">875245</strong>
+24 verbose bad json           downloads in the last week
+24 verbose bad json         </li>
+24 verbose bad json         <li>
+24 verbose bad json           <strong class="pretty-number monthly-downloads">3158735</strong>
+24 verbose bad json           downloads in the last month
+24 verbose bad json         </li>
+24 verbose bad json
+24 verbose bad json         <li id="issues" data-ghapi="https://api.github.com/repos/moment/moment">
+24 verbose bad json           <span class="original">Have an issue? <a href="https://github.com/moment/moment/issues">File it.</a></span>
+24 verbose bad json             <span class="enhanced" style="display:none">
+24 verbose bad json               <a href="https://github.com/moment/moment/issues"></a> on GitHub
+24 verbose bad json             </span>
+24 verbose bad json         </li>
+24 verbose bad json
+24 verbose bad json         <li id="pull_requests" style="display:none">
+24 verbose bad json           <a href="https://github.com/moment/moment/pulls"></a> on GitHub
+24 verbose bad json         </li>
+24 verbose bad json
+24 verbose bad json     </ul>
+24 verbose bad json
+24 verbose bad json       <h3>Try it out</h3>
+24 verbose bad json       <ul class="box">
+24 verbose bad json         <li class="tonicdev"><a href="https://tonicdev.com/npm/moment" target="_blank">Test moment in your browser.</a></li>
+24 verbose bad json       </ul>
+24 verbose bad json
+24 verbose bad json   <h3>Keywords</h3>
+24 verbose bad json   <p class="list-of-links">
+24 verbose bad json         <a href="/browse/keyword/ender">ender</a>,
+24 verbose bad json         <a href="/browse/keyword/l10n">l10n</a>,
+24 verbose bad json         <a href="/browse/keyword/i18n">i18n</a>,
+24 verbose bad json         <a href="/browse/keyword/validate">validate</a>,
+24 verbose bad json         <a href="/browse/keyword/format">format</a>,
+24 verbose bad json         <a href="/browse/keyword/parse">parse</a>,
+24 verbose bad json         <a href="/browse/keyword/time">time</a>,
+24 verbose bad json         <a href="/browse/keyword/date">date</a>,
+24 verbose bad json         <a href="/browse/keyword/moment">moment</a>
+24 verbose bad json   </p>
+24 verbose bad json
+24 verbose bad json   <h3>Dependencies </h3>
+24 verbose bad json   <p class="list-of-links">
+24 verbose bad json       None
+24 verbose bad json   </p>
+24 verbose bad json
+24 verbose bad json     <h3><a href="/browse/depended/moment">Dependents</a></h3>
+24 verbose bad json     <p class="list-of-links dependents">
+24 verbose bad json
+24 verbose bad json           <a href="/package/fluentcv">fluentcv</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/good-slack">good-slack</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/meshblu-server">meshblu-server</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/@ortoo/angular-resource">@ortoo/angular-resource</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/microservicebus.node">microservicebus.node</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/queue-light">queue-light</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/mx-react-components">mx-react-components</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/atlasboard-aws">atlasboard-aws</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/fluent-rest-tester">fluent-rest-tester</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/periodicjs.core.controller">periodicjs.core.controller</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/sitespeed.io">sitespeed.io</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/happner">happner</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/happn">happn</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/unclog">unclog</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/azure-arm-datalake-analytics">azure-arm-datalake-analytics</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/@nymdev/clay-kiln">@nymdev/clay-kiln</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/thing-it-node">thing-it-node</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/cmpnt">cmpnt</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/ih-pagelet-service-indicators">ih-pagelet-service-indicators</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/bip-pod">bip-pod</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/push_scheduler">push_scheduler</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/arrow">arrow</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/smallilies">smallilies</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/simple-browser-storage">simple-browser-storage</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/clean-s3">clean-s3</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/moment-parseformat">moment-parseformat</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/fuelux">fuelux</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/apostrophe">apostrophe</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/ih-custom-branding">ih-custom-branding</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/periodicjs.ext.login">periodicjs.ext.login</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/search-ui">search-ui</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/space.services">space.services</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/hubot-project-snapshot">hubot-project-snapshot</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/sequelize">sequelize</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/ih-pagelet-checklists">ih-pagelet-checklists</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/@prometheusresearch/react-datetimepicker">@prometheusresearch/react-datetimepicker</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/@rdcl/teensy">@rdcl/teensy</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/react-datepicker">react-datepicker</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/stormpath">stormpath</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/hebe-utils">hebe-utils</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/javascript-i18n-library">javascript-i18n-library</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/pancakes-recipe">pancakes-recipe</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/band-camp">band-camp</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/shipit-db">shipit-db</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/pm2">pm2</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/etl">etl</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/formio">formio</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/thinkful-ui">thinkful-ui</a>,
+24 verbose bad json
+24 verbose bad json           <a href="/package/testx-xlsx-parser">testx-xlsx-parser</a>,
+24 verbose bad json                   <a href="/package/highlogger">highlogger</a>,
+24 verbose bad json         <a href="/browse/depended/moment">and more</a>
+24 verbose bad json     </p>
+24 verbose bad json
+24 verbose bad json   <script type="application/ld+json">
+24 verbose bad json     {
+24 verbose bad json       "@context": "http://schema.org",
+24 verbose bad json       "@type": "SoftwareApplication",
+24 verbose bad json       "name": "moment",
+24 verbose bad json       "description": "Parse, validate, manipulate, and display dates",
+24 verbose bad json       "url": "https://www.npmjs.com/package/moment",
+24 verbose bad json       "keywords": "ender,l10n,i18n,validate,format,parse,time,date,moment",
+24 verbose bad json       "applicationCategory": "DeveloperApplication",
+24 verbose bad json       "offers": {
+24 verbose bad json          "@type": "Offer",
+24 verbose bad json          "price": "0.00"
+24 verbose bad json       }
+24 verbose bad json     }
+24 verbose bad json   </script>
+24 verbose bad json
+24 verbose bad json     <div class="hiring-container" data-template="sidebar"></div>
+24 verbose bad json
+24 verbose bad json </div>
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json   </div>
+24 verbose bad json
+24 verbose bad json   <footer>
+24 verbose bad json
+24 verbose bad json     <div class="container">
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json         <ul class="columnar">
+24 verbose bad json           <li>
+24 verbose bad json             <h3>You Need Help</h3>
+24 verbose bad json             <ul class="links">
+24 verbose bad json               <li><a href="https://docs.npmjs.com">Documentation</a></li>
+24 verbose bad json               <li><a href="/support">Support / Contact Us</a></li>
+24 verbose bad json               <li><a href="http://status.npmjs.org/">Registry Status</a></li>
+24 verbose bad json               <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+24 verbose bad json               <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+24 verbose bad json               <li><a href="/security">Security</a></li>
+24 verbose bad json             </ul>
+24 verbose bad json           </li>
+24 verbose bad json
+24 verbose bad json           <li>
+24 verbose bad json             <h3>About npm</h3>
+24 verbose bad json             <ul class="links">
+24 verbose bad json               <li><a href="/about">About npm, Inc</a></li>
+24 verbose bad json               <li><a href="/jobs">Jobs</a></li>
+24 verbose bad json               <li><a href="/private-modules">npm private modules</a></li>
+24 verbose bad json               <li><a href="http://blog.npmjs.org">Blog</a></li>
+24 verbose bad json               <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+24 verbose bad json               <li><a href="https://github.com/npm">GitHub</a></li>
+24 verbose bad json             </ul>
+24 verbose bad json           </li>
+24 verbose bad json
+24 verbose bad json           <li>
+24 verbose bad json             <h3>Legal Stuff</h3>
+24 verbose bad json             <ul class="links">
+24 verbose bad json               <li><a href="/policies/conduct">Code of Conduct</a></li>
+24 verbose bad json               <li><a href="/policies/disputes">Package Name Disputes</a></li>
+24 verbose bad json               <li><a href="/policies/npm-license">npm License</a></li>
+24 verbose bad json               <li><a href="/policies/privacy">Privacy Policy</a></li>
+24 verbose bad json               <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
+24 verbose bad json               <li><a href="/policies/">Other policies</a></li>
+24 verbose bad json             </ul>
+24 verbose bad json           </li>
+24 verbose bad json         </ul>
+24 verbose bad json
+24 verbose bad json
+24 verbose bad json     </div>
+24 verbose bad json
+24 verbose bad json     <div class="container centered">
+24 verbose bad json       <a href="/" id="npm-loves-you">
+24 verbose bad json         npm loves you
+24 verbose bad json       </a>
+24 verbose bad json     </div>
+24 verbose bad json
+24 verbose bad json   </footer>
+24 verbose bad json
+24 verbose bad json   <script defer src="/static/js/vendor.min.76ac749e.js"></script>
+24 verbose bad json </body>
+24 verbose bad json </html>
+24 verbose bad json
+24 verbose bad json <!-- pid=10095 0767cc7a6f370f08081b0f08b1a7b746edc31063 https://www.npmjs.com www-9-west.internal.npmjs.com  -->
+25 error registry error parsing json
+26 verbose headers { date: 'Wed, 28 Oct 2015 02:32:16 GMT',
+26 verbose headers   'content-type': 'text/html',
+26 verbose headers   'transfer-encoding': 'chunked',
+26 verbose headers   connection: 'close',
+26 verbose headers   vary: 'Accept-Encoding',
+26 verbose headers   'x-frame-options': 'DENY',
+26 verbose headers   'x-xss-protection': '1; mode=block',
+26 verbose headers   'x-download-options': 'noopen',
+26 verbose headers   'x-content-type-options': 'nosniff',
+26 verbose headers   'cache-control': 'no-cache',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   'x-served-by': 'cache-nrt6135-NRT',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'set-cookie': [ 'BAIDUID=D8EAA115DDC6A49FBB340D767093BE9F:FG=1; expires=Thu, 27-Oct-16 02:32:16 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1' ],
+26 verbose headers   p3p: 'CP=" OTI DSP COR IVA OUR IND COM "',
+26 verbose headers   tracecode: '19368751500441148426102810',
+26 verbose headers   server: 'Apache',
+26 verbose headers   'content-encoding': 'gzip' }
+27 silly get cb [ 200,
+27 silly get   { date: 'Wed, 28 Oct 2015 02:32:16 GMT',
+27 silly get     'content-type': 'text/html',
+27 silly get     'transfer-encoding': 'chunked',
+27 silly get     connection: 'close',
+27 silly get     vary: 'Accept-Encoding',
+27 silly get     'x-frame-options': 'DENY',
+27 silly get     'x-xss-protection': '1; mode=block',
+27 silly get     'x-download-options': 'noopen',
+27 silly get     'x-content-type-options': 'nosniff',
+27 silly get     'cache-control': 'no-cache',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '0',
+27 silly get     'x-served-by': 'cache-nrt6135-NRT',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'set-cookie': [ 'BAIDUID=D8EAA115DDC6A49FBB340D767093BE9F:FG=1; expires=Thu, 27-Oct-16 02:32:16 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1' ],
+27 silly get     p3p: 'CP=" OTI DSP COR IVA OUR IND COM "',
+27 silly get     tracecode: '19368751500441148426102810',
+27 silly get     server: 'Apache',
+27 silly get     'content-encoding': 'gzip' } ]
+28 verbose stack SyntaxError: Unexpected token <
+28 verbose stack <!doctype html>
+28 verbose stack <html lang="en">
+28 verbose stack <head>
+28 verbose stack   <meta charset="utf-8">
+28 verbose stack   <title>moment</title>
+28 verbose stack
+28 verbose stack     <meta name="description" content="Parse, validate, manipulate, and display dates">
+28 verbose stack     <meta name="keywords" content="ender,l10n,i18n,validate,format,parse,time,date,moment">
+28 verbose stack     <meta name="twitter:url" content="https://www.npmjs.com/package/moment">
+28 verbose stack     <meta name="twitter:title" content="npm: moment">
+28 verbose stack     <meta name="twitter:description" content="Parse, validate, manipulate, and display dates">
+28 verbose stack
+28 verbose stack   <meta http-equiv="cleartype" content="on" />
+28 verbose stack
+28 verbose stack   <meta name="apple-mobile-web-app-capable" content="no">
+28 verbose stack   <meta name="description" content="npm is the package manager for javascript">
+28 verbose stack   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+28 verbose stack
+28 verbose stack   <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="76x76" href="/static/images/touch-icons/apple-touch-icon-76x76.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="114x114" href="/static/images/touch-icons/apple-touch-icon-114x114.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="120x120" href="/static/images/touch-icons/apple-touch-icon-120x120.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="144x144" href="/static/images/touch-icons/apple-touch-icon-144x144.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="152x152" href="/static/images/touch-icons/apple-touch-icon-152x152.png">
+28 verbose stack   <link rel="apple-touch-icon" sizes="180x180" href="/static/images/touch-icons/apple-touch-icon-180x180.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+28 verbose stack   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+28 verbose stack   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+28 verbose stack   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+28 verbose stack   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+28 verbose stack   <link rel="icon" type="image/png" href="/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+28 verbose stack   <link rel="icon" type="image/png" href="/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+28 verbose stack   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+28 verbose stack   <link rel="manifest" href="/static/images/touch-icons/manifest.json">
+28 verbose stack   <link rel="shortcut icon" href="/static/images/touch-icons/favicon.ico">
+28 verbose stack   <link rel="yandex-tableau-widget" href="/static/images/touch-icons/yandex-browser-manifest.json">
+28 verbose stack   <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+28 verbose stack   <meta name="apple-mobile-web-app-capable" content="yes">
+28 verbose stack   <meta name="msapplication-TileColor" content="#cb3837">
+28 verbose stack   <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+28 verbose stack   <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+28 verbose stack   <meta name="theme-color" content="#cb3837">
+28 verbose stack
+28 verbose stack   <link rel="canonical" href="https://www.npmjs.com/package/moment">
+28 verbose stack   <link rel="stylesheet" media="all" href="/static/css/index.f6b740dc.css">
+28 verbose stack   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
+28 verbose stack   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+28 verbose stack   <!--[if lt IE 9]>
+28 verbose stack     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+28 verbose stack   <![endif]-->
+28 verbose stack
+28 verbose stack   <script src="/static/js/index.min.97d1ee68.js"></script>
+28 verbose stack
+28 verbose stack </head>
+28 verbose stack
+28 verbose stack <body itemscope itemtype="http://schema.org/WebSite" data-crumb="tMXZw0OEFrXF_BYYUV_CLguFexGfvEUHgny4ITsvift">
+28 verbose stack   <meta itemprop="url" content="https://www.npmjs.com/">
+28 verbose stack
+28 verbose stack     <div id="notification-banner" class="hidden">
+28 verbose stack       <div class="container">
+28 verbose stack         <hgroup>
+28 verbose stack           <a href="/private-modules"
+28 verbose stack             data-event-trigger="click"
+28 verbose stack             data-event-name="private-modules-banner-signup-via-wombat">
+28 verbose stack             <img src="/static/images/wombat-by-night.svg" alt="night wombat">
+28 verbose stack           </a>
+28 verbose stack           <h2>private npm is here.</h2>
+28 verbose stack           <h3>publish unlimited private modules for just $7/month</h3>
+28 verbose stack         </hgroup>
+28 verbose stack         <a class="button" href="/private-modules"
+28 verbose stack           data-event-trigger="click"
+28 verbose stack           data-event-name="private-modules-banner-signup">sign up</a>
+28 verbose stack         <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+28 verbose stack       </div>
+28 verbose stack       <a class="button banner-close button-banner-close icon-x" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks"><span class="a11y-only">close</span></a>
+28 verbose stack     </div>
+28 verbose stack
+28 verbose stack     <nav>
+28 verbose stack       <div class="container">
+28 verbose stack         <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+28 verbose stack         <a href="/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+28 verbose stack         <a href="/enterprise">npm On-Site</a>
+28 verbose stack         <a href="https://docs.npmjs.com">documentation</a>
+28 verbose stack         <a href="http://blog.npmjs.org/">blog</a>
+28 verbose stack         <a href="/npm-weekly">npm weekly</a>
+28 verbose stack         <a href="/jobs">jobs</a>
+28 verbose stack         <a href="/support">support</a>
+28 verbose stack       </div>
+28 verbose stack     </nav>
+28 verbose stack
+28 verbose stack   <header>
+28 verbose stack     <div id='npm-logo'>
+28 verbose stack       <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+28 verbose stack
+28 verbose stack     </div>
+28 verbose stack
+28 verbose stack
+28 verbose stack       <div id="user-info" class="anonymous">
+28 verbose stack           <a href="/login"><img alt="" src="/static/images/wombat-avatar-small.png" /></a>
+28 verbose stack           <ul class="single">
+28 verbose stack               <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+28 verbose stack           </ul>
+28 verbose stack
+28 verbose stack       </div>
+28 verbose stack
+28 verbose stack
+28 verbose stack     <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+28 verbose stack       <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+28 verbose stack       <div id="site-search-container">
+28 verbose stack           <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+28 verbose stack       </div>
+28 verbose stack       <input type="submit" id="site-search-submit" />
+28 verbose stack     </form>
+28 verbose stack
+28 verbose stack   </header>
+28 verbose stack
+28 verbose stack   <div class="container content">
+28 verbose stack
+28 verbose stack <div class="content-column">
+28 verbose stack
+28 verbose stack   <h1 class="package-name">
+28 verbose stack     <a href="/package/moment">moment</a>
+28 verbose stack       <i class="icon-public"></i>
+28 verbose stack   </h1>
+28 verbose stack   <p class="package-description">Parse, validate, manipulate, and display dates</p>
+28 verbose stack
+28 verbose stack   <form class="star">
+28 verbose stack     <input type="hidden" name="name" value="moment">
+28 verbose stack     <input id="star-input" type="checkbox" name="isStarred" value="true" >
+28 verbose stack     <label for="star-input" class="icon-star"></label>
+28 verbose stack     <div class="honey">
+28 verbose stack       <label>If you are a robot, enter text here</label>
+28 verbose stack       <input type="text" autocomplete="off" name="honey">
+28 verbose stack     </div>
+28 verbose stack
+28 verbose stack       <input type="hidden" name="crumb" value="tMXZw0OEFrXF_BYYUV_CLguFexGfvEUHgny4ITsvift"/>
+28 verbose stack   </form>
+28 verbose stack
+28 verbose stack   <div id="readme" class="markdown">
+28 verbose stack       <p class="badge-only"><a href="https://gitter.im/moment/moment?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" class="badge"></a></p>
+28 verbose stack <p><a href="https://npmjs.org/package/moment"><img src="http://img.shields.io/npm/v/moment.svg?style=flat" class="badge"></a> <a href="https://npmjs.org/package/moment"><img src="http://img.shields.io/npm/dm/moment.svg?style=flat" class="badge"></a> <a href="https://github.com/moment/moment/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" class="badge"></a> <a href="http://travis-ci.org/moment/moment"><img src="http://img.shields.io/travis/moment/moment/develop.svg?style=flat" class="badge"></a>
+28 verbose stack <a href="https://coveralls.io/r/moment/moment?branch=master"><img src="https://coveralls.io/repos/moment/moment/badge.svg?branch=master" class="badge"></a></p>
+28 verbose stack <p>A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.</p>
+28 verbose stack <h2><a href="http://momentjs.com/docs/">Documentation</a></h2>
+28 verbose stack <h2 id="user-content-port-to-es6-version-2-10-0" class="deep-link"><a href="#port-to-es6-version-2-10-0">Port to ES6 (version 2.10.0)</a></h2>
+28 verbose stack <p>Moment 2.10.0 does not bring any new features, but the code is now written in
+28 verbose stack es6 modules and placed inside <code>src/</code>. Previously <code>moment.js</code>, <code>locale/*.js</code> and
+28 verbose stack <code>test/moment/*.js</code>, <code>test/locale/*.js</code> contained the source of the project. Now
+28 verbose stack the source is in <code>src/</code>, temporary build (es5) files are placed under
+28 verbose stack <code>build/umd/</code> (for running tests during development), and the <code>moment.js</code> and
+28 verbose stack <code>locale/*.js</code> files are updated only on release.</p>
+28 verbose stack <p>If you want to use a particular revision of the code, make sure to run
+28 verbose stack <code>grunt transpile update-index</code>, so <code>moment.js</code> and <code>locales/*.js</code> are synced
+28 verbose stack with <code>src/*</code>. We might place that in a commit hook in the future.</p>
+28 verbose stack <h2 id="user-content-upgrading-to-2-0-0" class="deep-link"><a href="#upgrading-to-2-0-0">Upgrading to 2.0.0</a></h2>
+28 verbose stack <p>There are a number of small backwards incompatible changes with version 2.0.0. <a href="https://gist.github.com/timrwood/e72f2eef320ed9e37c51#backwards-incompatible-changes">See the full descriptions here</a></p>
+28 verbose stack <ul>
+28 verbose stack <li>
+28 verbose stack <p>Changed language ordinal method to return the number + ordinal instead of just the ordinal.</p>
+28 verbose stack </li>
+28 verbose stack <li>
+28 verbose stack <p>Changed two digit year parsing cutoff to match strptime.</p>
+28 verbose stack </li>
+28 verbose stack <li>
+28 verbose stack <p>Removed <code>moment#sod</code> and <code>moment#eod</code> in favor of <code>moment#startOf</code> and <code>moment#endOf</code>.</p>
+28 verbose stack </li>
+28 verbose stack <li>
+28 verbose stack <p>Removed <code>moment.humanizeDuration()</code> in favor of <code>moment.duration().humanize()</code>.</p>
+28 verbose stack </li>
+28 verbose stack <li>
+28 verbose stack <p>Removed the lang data objects from the top level namespace.</p>
+28 verbose stack </li>
+28 verbose stack <li>
+28 verbose stack <p>Duplicate <code>Date</code> passed to <code>moment()</code> instead of referencing it.</p>
+28 verbose stack </li>
+28 verbose stack </ul>
+28 verbose stack <h2><a href="https://github.com/moment/moment/blob/develop/CHANGELOG.md">Changelog</a></h2>
+28 verbose stack <h2><a href="https://github.com/moment/moment/blob/develop/CONTRIBUTING.md">Contributing</a></h2>
+28 verbose stack <p>We&apos;re looking for co-maintainers! If you want to become a master of time please
+28 verbose stack write to <a href="https://github.com/ichernev">ichernev</a>.</p>
+28 verbose stack <h2 id="user-content-license" class="deep-link"><a href="#license">License</a></h2>
+28 verbose stack <p>Moment.js is freely distributable under the terms of the <a href="https://github.com/moment/moment/blob/develop/LICENSE">MIT license</a>.</p>
+28 verbose stack
+28 verbose stack   </div>
+28 verbose stack
+28 verbose stack </div>
+28 verbose stack
+28 verbose stack <div class="sidebar">
+28 verbose stack
+28 verbose stack     <div class="autoselect-wrapper npm-install icon-download">
+28 verbose stack       <input type="text" value="npm install moment" readonly>
+28 verbose stack     </div>
+28 verbose stack
+28 verbose stack 	<ul class="box">
+28 verbose stack
+28 verbose stack       <li class="last-publisher">
+28 verbose stack           <a href="/~ichernev">
+28 verbose stack             <img src="https://s.gravatar.com/avatar/9d76d1f8de8619bf86854417c348b974?size=100&amp;default=retro" alt="ichernev" />
+28 verbose stack             <span>ichernev</span>
+28 verbose stack           </a>
+28 verbose stack           published
+28 verbose stack           <span data-date="2015-07-28T04:45:30.983Z" data-date-format="relative">
+28 verbose stack             2015-07-28T04:45:30.983Z
+28 verbose stack           </span>
+28 verbose stack       </li>
+28 verbose stack
+28 verbose stack     <li>
+28 verbose stack       <strong>2.10.6</strong>
+28 verbose stack       is the latest
+28 verbose stack         of 37 releases
+28 verbose stack     </li>
+28 verbose stack
+28 verbose stack       <li>
+28 verbose stack         <a href="https://github.com/moment/moment">github.com/moment/moment</a>
+28 verbose stack       </li>
+28 verbose stack
+28 verbose stack
+28 verbose stack       <li>
+28 verbose stack           <a href="http://opensource.org/licenses/MIT">MIT</a>
+28 verbose stack         <span> license</span>
+28 verbose stack       </li>
+28 verbose stack
+28 verbose stack   </ul>
+28 verbose stack
+28 verbose stack     <h3 title="collaborators">
+28 verbose stack       <a href="/package/moment/access">Collaborators</a>
+28 verbose stack     </h3>
+28 verbose stack
+28 verbose stack     <ul class="humans collaborators">
+28 verbose stack         <li>
+28 verbose stack             <a href="/~timrwood" rel="tipsy" title="timrwood">
+28 verbose stack                 <img src="https://s.gravatar.com/avatar/a511064517dfdf9ab9153843437ed2ff?size=100&amp;default=retro" alt="timrwood">
+28 verbose stack             </a>
+28 verbose stack         </li>
+28 verbose stack         <li>
+28 verbose stack             <a href="/~ichernev" rel="tipsy" title="ichernev">
+28 verbose stack                 <img src="https://s.gravatar.com/avatar/9d76d1f8de8619bf86854417c348b974?size=100&amp;default=retro" alt="ichernev">
+28 verbose stack             </a>
+28 verbose stack         </li>
+28 verbose stack
+28 verbose stack
+28 verbose stack     </ul>
+28 verbose stack
+28 verbose stack     <h3>Stats</h3>
+28 verbose stack     <ul class="box">
+28 verbose stack
+28 verbose stack         <li>
+28 verbose stack           <strong class="pretty-number daily-downloads">145655</strong>
+28 verbose stack           downloads in the last day
+28 verbose stack         </li>
+28 verbose stack         <li>
+28 verbose stack           <strong class="pretty-number weekly-downloads">875245</strong>
+28 verbose stack           downloads in the last week
+28 verbose stack         </li>
+28 verbose stack         <li>
+28 verbose stack           <strong class="pretty-number monthly-downloads">3158735</strong>
+28 verbose stack           downloads in the last month
+28 verbose stack         </li>
+28 verbose stack
+28 verbose stack         <li id="issues" data-ghapi="https://api.github.com/repos/moment/moment">
+28 verbose stack           <span class="original">Have an issue? <a href="https://github.com/moment/moment/issues">File it.</a></span>
+28 verbose stack             <span class="enhanced" style="display:none">
+28 verbose stack               <a href="https://github.com/moment/moment/issues"></a> on GitHub
+28 verbose stack             </span>
+28 verbose stack         </li>
+28 verbose stack
+28 verbose stack         <li id="pull_requests" style="display:none">
+28 verbose stack           <a href="https://github.com/moment/moment/pulls"></a> on GitHub
+28 verbose stack         </li>
+28 verbose stack
+28 verbose stack     </ul>
+28 verbose stack
+28 verbose stack       <h3>Try it out</h3>
+28 verbose stack       <ul class="box">
+28 verbose stack         <li class="tonicdev"><a href="https://tonicdev.com/npm/moment" target="_blank">Test moment in your browser.</a></li>
+28 verbose stack       </ul>
+28 verbose stack
+28 verbose stack   <h3>Keywords</h3>
+28 verbose stack   <p class="list-of-links">
+28 verbose stack         <a href="/browse/keyword/ender">ender</a>,
+28 verbose stack         <a href="/browse/keyword/l10n">l10n</a>,
+28 verbose stack         <a href="/browse/keyword/i18n">i18n</a>,
+28 verbose stack         <a href="/browse/keyword/validate">validate</a>,
+28 verbose stack         <a href="/browse/keyword/format">format</a>,
+28 verbose stack         <a href="/browse/keyword/parse">parse</a>,
+28 verbose stack         <a href="/browse/keyword/time">time</a>,
+28 verbose stack         <a href="/browse/keyword/date">date</a>,
+28 verbose stack         <a href="/browse/keyword/moment">moment</a>
+28 verbose stack   </p>
+28 verbose stack
+28 verbose stack   <h3>Dependencies </h3>
+28 verbose stack   <p class="list-of-links">
+28 verbose stack       None
+28 verbose stack   </p>
+28 verbose stack
+28 verbose stack     <h3><a href="/browse/depended/moment">Dependents</a></h3>
+28 verbose stack     <p class="list-of-links dependents">
+28 verbose stack
+28 verbose stack           <a href="/package/fluentcv">fluentcv</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/good-slack">good-slack</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/meshblu-server">meshblu-server</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/@ortoo/angular-resource">@ortoo/angular-resource</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/microservicebus.node">microservicebus.node</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/queue-light">queue-light</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/mx-react-components">mx-react-components</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/atlasboard-aws">atlasboard-aws</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/fluent-rest-tester">fluent-rest-tester</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/periodicjs.core.controller">periodicjs.core.controller</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/sitespeed.io">sitespeed.io</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/happner">happner</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/happn">happn</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/unclog">unclog</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/azure-arm-datalake-analytics">azure-arm-datalake-analytics</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/@nymdev/clay-kiln">@nymdev/clay-kiln</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/thing-it-node">thing-it-node</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/cmpnt">cmpnt</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/ih-pagelet-service-indicators">ih-pagelet-service-indicators</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/bip-pod">bip-pod</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/push_scheduler">push_scheduler</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/arrow">arrow</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/smallilies">smallilies</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/simple-browser-storage">simple-browser-storage</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/clean-s3">clean-s3</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/moment-parseformat">moment-parseformat</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/fuelux">fuelux</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/apostrophe">apostrophe</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/ih-custom-branding">ih-custom-branding</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/periodicjs.ext.login">periodicjs.ext.login</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/search-ui">search-ui</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/space.services">space.services</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/hubot-project-snapshot">hubot-project-snapshot</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/sequelize">sequelize</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/ih-pagelet-checklists">ih-pagelet-checklists</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/@prometheusresearch/react-datetimepicker">@prometheusresearch/react-datetimepicker</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/@rdcl/teensy">@rdcl/teensy</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/react-datepicker">react-datepicker</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/stormpath">stormpath</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/hebe-utils">hebe-utils</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/javascript-i18n-library">javascript-i18n-library</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/pancakes-recipe">pancakes-recipe</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/band-camp">band-camp</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/shipit-db">shipit-db</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/pm2">pm2</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/etl">etl</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/formio">formio</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/thinkful-ui">thinkful-ui</a>,
+28 verbose stack
+28 verbose stack           <a href="/package/testx-xlsx-parser">testx-xlsx-parser</a>,
+28 verbose stack                   <a href="/package/highlogger">highlogger</a>,
+28 verbose stack         <a href="/browse/depended/moment">and more</a>
+28 verbose stack     </p>
+28 verbose stack
+28 verbose stack   <script type="application/ld+json">
+28 verbose stack     {
+28 verbose stack       "@context": "http://schema.org",
+28 verbose stack       "@type": "SoftwareApplication",
+28 verbose stack       "name": "moment",
+28 verbose stack       "description": "Parse, validate, manipulate, and display dates",
+28 verbose stack       "url": "https://www.npmjs.com/package/moment",
+28 verbose stack       "keywords": "ender,l10n,i18n,validate,format,parse,time,date,moment",
+28 verbose stack       "applicationCategory": "DeveloperApplication",
+28 verbose stack       "offers": {
+28 verbose stack          "@type": "Offer",
+28 verbose stack          "price": "0.00"
+28 verbose stack       }
+28 verbose stack     }
+28 verbose stack   </script>
+28 verbose stack
+28 verbose stack     <div class="hiring-container" data-template="sidebar"></div>
+28 verbose stack
+28 verbose stack </div>
+28 verbose stack
+28 verbose stack
+28 verbose stack   </div>
+28 verbose stack
+28 verbose stack   <footer>
+28 verbose stack
+28 verbose stack     <div class="container">
+28 verbose stack
+28 verbose stack
+28 verbose stack         <ul class="columnar">
+28 verbose stack           <li>
+28 verbose stack             <h3>You Need Help</h3>
+28 verbose stack             <ul class="links">
+28 verbose stack               <li><a href="https://docs.npmjs.com">Documentation</a></li>
+28 verbose stack               <li><a href="/support">Support / Contact Us</a></li>
+28 verbose stack               <li><a href="http://status.npmjs.org/">Registry Status</a></li>
+28 verbose stack               <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+28 verbose stack               <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+28 verbose stack               <li><a href="/security">Security</a></li>
+28 verbose stack             </ul>
+28 verbose stack           </li>
+28 verbose stack
+28 verbose stack           <li>
+28 verbose stack             <h3>About npm</h3>
+28 verbose stack             <ul class="links">
+28 verbose stack               <li><a href="/about">About npm, Inc</a></li>
+28 verbose stack               <li><a href="/jobs">Jobs</a></li>
+28 verbose stack               <li><a href="/private-modules">npm private modules</a></li>
+28 verbose stack               <li><a href="http://blog.npmjs.org">Blog</a></li>
+28 verbose stack               <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+28 verbose stack               <li><a href="https://github.com/npm">GitHub</a></li>
+28 verbose stack             </ul>
+28 verbose stack           </li>
+28 verbose stack
+28 verbose stack           <li>
+28 verbose stack             <h3>Legal Stuff</h3>
+28 verbose stack             <ul class="links">
+28 verbose stack               <li><a href="/policies/conduct">Code of Conduct</a></li>
+28 verbose stack               <li><a href="/policies/disputes">Package Name Disputes</a></li>
+28 verbose stack               <li><a href="/policies/npm-license">npm License</a></li>
+28 verbose stack               <li><a href="/policies/privacy">Privacy Policy</a></li>
+28 verbose stack               <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
+28 verbose stack               <li><a href="/policies/">Other policies</a></li>
+28 verbose stack             </ul>
+28 verbose stack           </li>
+28 verbose stack         </ul>
+28 verbose stack
+28 verbose stack
+28 verbose stack     </div>
+28 verbose stack
+28 verbose stack     <div class="container centered">
+28 verbose stack       <a href="/" id="npm-loves-you">
+28 verbose stack         npm loves you
+28 verbose stack       </a>
+28 verbose stack     </div>
+28 verbose stack
+28 verbose stack   </footer>
+28 verbose stack
+28 verbose stack   <script defer src="/static/js/vendor.min.76ac749e.js"></script>
+28 verbose stack </body>
+28 verbose stack </html>
+28 verbose stack
+28 verbose stack <!-- pid=10095 0767cc7a6f370f08081b0f08b1a7b746edc31063 https://www.npmjs.com www-9-west.internal.npmjs.com  -->
+28 verbose stack
+28 verbose stack     at Object.parse (native)
+28 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:205:23)
+28 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:184:7
+28 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+28 verbose stack     at Gunzip.emit (events.js:129:20)
+28 verbose stack     at _stream_readable.js:908:16
+28 verbose stack     at process._tickCallback (node.js:355:11)
+29 verbose cwd D:\Work - sxd\nodeStudy\2015-09-14 express_demo
+30 error Windows_NT 6.1.7601
+31 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "moment"
+32 error node v0.12.0
+33 error npm  v2.5.1
+34 error Unexpected token <
+34 error <!doctype html>
+34 error <html lang="en">
+34 error <head>
+34 error   <meta charset="utf-8">
+34 error   <title>moment</title>
+34 error
+34 error     <meta name="description" content="Parse, validate, manipulate, and display dates">
+34 error     <meta name="keywords" content="ender,l10n,i18n,validate,format,parse,time,date,moment">
+34 error     <meta name="twitter:url" content="https://www.npmjs.com/package/moment">
+34 error     <meta name="twitter:title" content="npm: moment">
+34 error     <meta name="twitter:description" content="Parse, validate, manipulate, and display dates">
+34 error
+34 error   <meta http-equiv="cleartype" content="on" />
+34 error
+34 error   <meta name="apple-mobile-web-app-capable" content="no">
+34 error   <meta name="description" content="npm is the package manager for javascript">
+34 error   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+34 error
+34 error   <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
+34 error   <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
+34 error   <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
+34 error   <link rel="apple-touch-icon" sizes="76x76" href="/static/images/touch-icons/apple-touch-icon-76x76.png">
+34 error   <link rel="apple-touch-icon" sizes="114x114" href="/static/images/touch-icons/apple-touch-icon-114x114.png">
+34 error   <link rel="apple-touch-icon" sizes="120x120" href="/static/images/touch-icons/apple-touch-icon-120x120.png">
+34 error   <link rel="apple-touch-icon" sizes="144x144" href="/static/images/touch-icons/apple-touch-icon-144x144.png">
+34 error   <link rel="apple-touch-icon" sizes="152x152" href="/static/images/touch-icons/apple-touch-icon-152x152.png">
+34 error   <link rel="apple-touch-icon" sizes="180x180" href="/static/images/touch-icons/apple-touch-icon-180x180.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+34 error   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+34 error   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+34 error   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+34 error   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+34 error   <link rel="icon" type="image/png" href="/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+34 error   <link rel="icon" type="image/png" href="/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+34 error   <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+34 error   <link rel="manifest" href="/static/images/touch-icons/manifest.json">
+34 error   <link rel="shortcut icon" href="/static/images/touch-icons/favicon.ico">
+34 error   <link rel="yandex-tableau-widget" href="/static/images/touch-icons/yandex-browser-manifest.json">
+34 error   <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+34 error   <meta name="apple-mobile-web-app-capable" content="yes">
+34 error   <meta name="msapplication-TileColor" content="#cb3837">
+34 error   <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+34 error   <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+34 error   <meta name="theme-color" content="#cb3837">
+34 error
+34 error   <link rel="canonical" href="https://www.npmjs.com/package/moment">
+34 error   <link rel="stylesheet" media="all" href="/static/css/index.f6b740dc.css">
+34 error   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
+34 error   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+34 error   <!--[if lt IE 9]>
+34 error     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+34 error   <![endif]-->
+34 error
+34 error   <script src="/static/js/index.min.97d1ee68.js"></script>
+34 error
+34 error </head>
+34 error
+34 error <body itemscope itemtype="http://schema.org/WebSite" data-crumb="tMXZw0OEFrXF_BYYUV_CLguFexGfvEUHgny4ITsvift">
+34 error   <meta itemprop="url" content="https://www.npmjs.com/">
+34 error
+34 error     <div id="notification-banner" class="hidden">
+34 error       <div class="container">
+34 error         <hgroup>
+34 error           <a href="/private-modules"
+34 error             data-event-trigger="click"
+34 error             data-event-name="private-modules-banner-signup-via-wombat">
+34 error             <img src="/static/images/wombat-by-night.svg" alt="night wombat">
+34 error           </a>
+34 error           <h2>private npm is here.</h2>
+34 error           <h3>publish unlimited private modules for just $7/month</h3>
+34 error         </hgroup>
+34 error         <a class="button" href="/private-modules"
+34 error           data-event-trigger="click"
+34 error           data-event-name="private-modules-banner-signup">sign up</a>
+34 error         <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+34 error       </div>
+34 error       <a class="button banner-close button-banner-close icon-x" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks"><span class="a11y-only">close</span></a>
+34 error     </div>
+34 error
+34 error     <nav>
+34 error       <div class="container">
+34 error         <a href="#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+34 error         <a href="/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+34 error         <a href="/enterprise">npm On-Site</a>
+34 error         <a href="https://docs.npmjs.com">documentation</a>
+34 error         <a href="http://blog.npmjs.org/">blog</a>
+34 error         <a href="/npm-weekly">npm weekly</a>
+34 error         <a href="/jobs">jobs</a>
+34 error         <a href="/support">support</a>
+34 error       </div>
+34 error     </nav>
+34 error
+34 error   <header>
+34 error     <div id='npm-logo'>
+34 error       <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+34 error
+34 error     </div>
+34 error
+34 error
+34 error       <div id="user-info" class="anonymous">
+34 error           <a href="/login"><img alt="" src="/static/images/wombat-avatar-small.png" /></a>
+34 error           <ul class="single">
+34 error               <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+34 error           </ul>
+34 error
+34 error       </div>
+34 error
+34 error
+34 error     <form id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+34 error       <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+34 error       <div id="site-search-container">
+34 error           <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+34 error       </div>
+34 error       <input type="submit" id="site-search-submit" />
+34 error     </form>
+34 error
+34 error   </header>
+34 error
+34 error   <div class="container content">
+34 error
+34 error <div class="content-column">
+34 error
+34 error   <h1 class="package-name">
+34 error     <a href="/package/moment">moment</a>
+34 error       <i class="icon-public"></i>
+34 error   </h1>
+34 error   <p class="package-description">Parse, validate, manipulate, and display dates</p>
+34 error
+34 error   <form class="star">
+34 error     <input type="hidden" name="name" value="moment">
+34 error     <input id="star-input" type="checkbox" name="isStarred" value="true" >
+34 error     <label for="star-input" class="icon-star"></label>
+34 error     <div class="honey">
+34 error       <label>If you are a robot, enter text here</label>
+34 error       <input type="text" autocomplete="off" name="honey">
+34 error     </div>
+34 error
+34 error       <input type="hidden" name="crumb" value="tMXZw0OEFrXF_BYYUV_CLguFexGfvEUHgny4ITsvift"/>
+34 error   </form>
+34 error
+34 error   <div id="readme" class="markdown">
+34 error       <p class="badge-only"><a href="https://gitter.im/moment/moment?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" class="badge"></a></p>
+34 error <p><a href="https://npmjs.org/package/moment"><img src="http://img.shields.io/npm/v/moment.svg?style=flat" class="badge"></a> <a href="https://npmjs.org/package/moment"><img src="http://img.shields.io/npm/dm/moment.svg?style=flat" class="badge"></a> <a href="https://github.com/moment/moment/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" class="badge"></a> <a href="http://travis-ci.org/moment/moment"><img src="http://img.shields.io/travis/moment/moment/develop.svg?style=flat" class="badge"></a>
+34 error <a href="https://coveralls.io/r/moment/moment?branch=master"><img src="https://coveralls.io/repos/moment/moment/badge.svg?branch=master" class="badge"></a></p>
+34 error <p>A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.</p>
+34 error <h2><a href="http://momentjs.com/docs/">Documentation</a></h2>
+34 error <h2 id="user-content-port-to-es6-version-2-10-0" class="deep-link"><a href="#port-to-es6-version-2-10-0">Port to ES6 (version 2.10.0)</a></h2>
+34 error <p>Moment 2.10.0 does not bring any new features, but the code is now written in
+34 error es6 modules and placed inside <code>src/</code>. Previously <code>moment.js</code>, <code>locale/*.js</code> and
+34 error <code>test/moment/*.js</code>, <code>test/locale/*.js</code> contained the source of the project. Now
+34 error the source is in <code>src/</code>, temporary build (es5) files are placed under
+34 error <code>build/umd/</code> (for running tests during development), and the <code>moment.js</code> and
+34 error <code>locale/*.js</code> files are updated only on release.</p>
+34 error <p>If you want to use a particular revision of the code, make sure to run
+34 error <code>grunt transpile update-index</code>, so <code>moment.js</code> and <code>locales/*.js</code> are synced
+34 error with <code>src/*</code>. We might place that in a commit hook in the future.</p>
+34 error <h2 id="user-content-upgrading-to-2-0-0" class="deep-link"><a href="#upgrading-to-2-0-0">Upgrading to 2.0.0</a></h2>
+34 error <p>There are a number of small backwards incompatible changes with version 2.0.0. <a href="https://gist.github.com/timrwood/e72f2eef320ed9e37c51#backwards-incompatible-changes">See the full descriptions here</a></p>
+34 error <ul>
+34 error <li>
+34 error <p>Changed language ordinal method to return the number + ordinal instead of just the ordinal.</p>
+34 error </li>
+34 error <li>
+34 error <p>Changed two digit year parsing cutoff to match strptime.</p>
+34 error </li>
+34 error <li>
+34 error <p>Removed <code>moment#sod</code> and <code>moment#eod</code> in favor of <code>moment#startOf</code> and <code>moment#endOf</code>.</p>
+34 error </li>
+34 error <li>
+34 error <p>Removed <code>moment.humanizeDuration()</code> in favor of <code>moment.duration().humanize()</code>.</p>
+34 error </li>
+34 error <li>
+34 error <p>Removed the lang data objects from the top level namespace.</p>
+34 error </li>
+34 error <li>
+34 error <p>Duplicate <code>Date</code> passed to <code>moment()</code> instead of referencing it.</p>
+34 error </li>
+34 error </ul>
+34 error <h2><a href="https://github.com/moment/moment/blob/develop/CHANGELOG.md">Changelog</a></h2>
+34 error <h2><a href="https://github.com/moment/moment/blob/develop/CONTRIBUTING.md">Contributing</a></h2>
+34 error <p>We&apos;re looking for co-maintainers! If you want to become a master of time please
+34 error write to <a href="https://github.com/ichernev">ichernev</a>.</p>
+34 error <h2 id="user-content-license" class="deep-link"><a href="#license">License</a></h2>
+34 error <p>Moment.js is freely distributable under the terms of the <a href="https://github.com/moment/moment/blob/develop/LICENSE">MIT license</a>.</p>
+34 error
+34 error   </div>
+34 error
+34 error </div>
+34 error
+34 error <div class="sidebar">
+34 error
+34 error     <div class="autoselect-wrapper npm-install icon-download">
+34 error       <input type="text" value="npm install moment" readonly>
+34 error     </div>
+34 error
+34 error 	<ul class="box">
+34 error
+34 error       <li class="last-publisher">
+34 error           <a href="/~ichernev">
+34 error             <img src="https://s.gravatar.com/avatar/9d76d1f8de8619bf86854417c348b974?size=100&amp;default=retro" alt="ichernev" />
+34 error             <span>ichernev</span>
+34 error           </a>
+34 error           published
+34 error           <span data-date="2015-07-28T04:45:30.983Z" data-date-format="relative">
+34 error             2015-07-28T04:45:30.983Z
+34 error           </span>
+34 error       </li>
+34 error
+34 error     <li>
+34 error       <strong>2.10.6</strong>
+34 error       is the latest
+34 error         of 37 releases
+34 error     </li>
+34 error
+34 error       <li>
+34 error         <a href="https://github.com/moment/moment">github.com/moment/moment</a>
+34 error       </li>
+34 error
+34 error
+34 error       <li>
+34 error           <a href="http://opensource.org/licenses/MIT">MIT</a>
+34 error         <span> license</span>
+34 error       </li>
+34 error
+34 error   </ul>
+34 error
+34 error     <h3 title="collaborators">
+34 error       <a href="/package/moment/access">Collaborators</a>
+34 error     </h3>
+34 error
+34 error     <ul class="humans collaborators">
+34 error         <li>
+34 error             <a href="/~timrwood" rel="tipsy" title="timrwood">
+34 error                 <img src="https://s.gravatar.com/avatar/a511064517dfdf9ab9153843437ed2ff?size=100&amp;default=retro" alt="timrwood">
+34 error             </a>
+34 error         </li>
+34 error         <li>
+34 error             <a href="/~ichernev" rel="tipsy" title="ichernev">
+34 error                 <img src="https://s.gravatar.com/avatar/9d76d1f8de8619bf86854417c348b974?size=100&amp;default=retro" alt="ichernev">
+34 error             </a>
+34 error         </li>
+34 error
+34 error
+34 error     </ul>
+34 error
+34 error     <h3>Stats</h3>
+34 error     <ul class="box">
+34 error
+34 error         <li>
+34 error           <strong class="pretty-number daily-downloads">145655</strong>
+34 error           downloads in the last day
+34 error         </li>
+34 error         <li>
+34 error           <strong class="pretty-number weekly-downloads">875245</strong>
+34 error           downloads in the last week
+34 error         </li>
+34 error         <li>
+34 error           <strong class="pretty-number monthly-downloads">3158735</strong>
+34 error           downloads in the last month
+34 error         </li>
+34 error
+34 error         <li id="issues" data-ghapi="https://api.github.com/repos/moment/moment">
+34 error           <span class="original">Have an issue? <a href="https://github.com/moment/moment/issues">File it.</a></span>
+34 error             <span class="enhanced" style="display:none">
+34 error               <a href="https://github.com/moment/moment/issues"></a> on GitHub
+34 error             </span>
+34 error         </li>
+34 error
+34 error         <li id="pull_requests" style="display:none">
+34 error           <a href="https://github.com/moment/moment/pulls"></a> on GitHub
+34 error         </li>
+34 error
+34 error     </ul>
+34 error
+34 error       <h3>Try it out</h3>
+34 error       <ul class="box">
+34 error         <li class="tonicdev"><a href="https://tonicdev.com/npm/moment" target="_blank">Test moment in your browser.</a></li>
+34 error       </ul>
+34 error
+34 error   <h3>Keywords</h3>
+34 error   <p class="list-of-links">
+34 error         <a href="/browse/keyword/ender">ender</a>,
+34 error         <a href="/browse/keyword/l10n">l10n</a>,
+34 error         <a href="/browse/keyword/i18n">i18n</a>,
+34 error         <a href="/browse/keyword/validate">validate</a>,
+34 error         <a href="/browse/keyword/format">format</a>,
+34 error         <a href="/browse/keyword/parse">parse</a>,
+34 error         <a href="/browse/keyword/time">time</a>,
+34 error         <a href="/browse/keyword/date">date</a>,
+34 error         <a href="/browse/keyword/moment">moment</a>
+34 error   </p>
+34 error
+34 error   <h3>Dependencies </h3>
+34 error   <p class="list-of-links">
+34 error       None
+34 error   </p>
+34 error
+34 error     <h3><a href="/browse/depended/moment">Dependents</a></h3>
+34 error     <p class="list-of-links dependents">
+34 error
+34 error           <a href="/package/fluentcv">fluentcv</a>,
+34 error
+34 error           <a href="/package/good-slack">good-slack</a>,
+34 error
+34 error           <a href="/package/meshblu-server">meshblu-server</a>,
+34 error
+34 error           <a href="/package/@ortoo/angular-resource">@ortoo/angular-resource</a>,
+34 error
+34 error           <a href="/package/microservicebus.node">microservicebus.node</a>,
+34 error
+34 error           <a href="/package/queue-light">queue-light</a>,
+34 error
+34 error           <a href="/package/mx-react-components">mx-react-components</a>,
+34 error
+34 error           <a href="/package/atlasboard-aws">atlasboard-aws</a>,
+34 error
+34 error           <a href="/package/fluent-rest-tester">fluent-rest-tester</a>,
+34 error
+34 error           <a href="/package/periodicjs.core.controller">periodicjs.core.controller</a>,
+34 error
+34 error           <a href="/package/sitespeed.io">sitespeed.io</a>,
+34 error
+34 error           <a href="/package/happner">happner</a>,
+34 error
+34 error           <a href="/package/happn">happn</a>,
+34 error
+34 error           <a href="/package/unclog">unclog</a>,
+34 error
+34 error           <a href="/package/azure-arm-datalake-analytics">azure-arm-datalake-analytics</a>,
+34 error
+34 error           <a href="/package/@nymdev/clay-kiln">@nymdev/clay-kiln</a>,
+34 error
+34 error           <a href="/package/thing-it-node">thing-it-node</a>,
+34 error
+34 error           <a href="/package/cmpnt">cmpnt</a>,
+34 error
+34 error           <a href="/package/ih-pagelet-service-indicators">ih-pagelet-service-indicators</a>,
+34 error
+34 error           <a href="/package/bip-pod">bip-pod</a>,
+34 error
+34 error           <a href="/package/push_scheduler">push_scheduler</a>,
+34 error
+34 error           <a href="/package/arrow">arrow</a>,
+34 error
+34 error           <a href="/package/smallilies">smallilies</a>,
+34 error
+34 error           <a href="/package/simple-browser-storage">simple-browser-storage</a>,
+34 error
+34 error           <a href="/package/clean-s3">clean-s3</a>,
+34 error
+34 error           <a href="/package/moment-parseformat">moment-parseformat</a>,
+34 error
+34 error           <a href="/package/fuelux">fuelux</a>,
+34 error
+34 error           <a href="/package/apostrophe">apostrophe</a>,
+34 error
+34 error           <a href="/package/ih-custom-branding">ih-custom-branding</a>,
+34 error
+34 error           <a href="/package/periodicjs.ext.login">periodicjs.ext.login</a>,
+34 error
+34 error           <a href="/package/search-ui">search-ui</a>,
+34 error
+34 error           <a href="/package/space.services">space.services</a>,
+34 error
+34 error           <a href="/package/hubot-project-snapshot">hubot-project-snapshot</a>,
+34 error
+34 error           <a href="/package/sequelize">sequelize</a>,
+34 error
+34 error           <a href="/package/ih-pagelet-checklists">ih-pagelet-checklists</a>,
+34 error
+34 error           <a href="/package/@prometheusresearch/react-datetimepicker">@prometheusresearch/react-datetimepicker</a>,
+34 error
+34 error           <a href="/package/@rdcl/teensy">@rdcl/teensy</a>,
+34 error
+34 error           <a href="/package/react-datepicker">react-datepicker</a>,
+34 error
+34 error           <a href="/package/stormpath">stormpath</a>,
+34 error
+34 error           <a href="/package/hebe-utils">hebe-utils</a>,
+34 error
+34 error           <a href="/package/javascript-i18n-library">javascript-i18n-library</a>,
+34 error
+34 error           <a href="/package/pancakes-recipe">pancakes-recipe</a>,
+34 error
+34 error           <a href="/package/band-camp">band-camp</a>,
+34 error
+34 error           <a href="/package/shipit-db">shipit-db</a>,
+34 error
+34 error           <a href="/package/pm2">pm2</a>,
+34 error
+34 error           <a href="/package/etl">etl</a>,
+34 error
+34 error           <a href="/package/formio">formio</a>,
+34 error
+34 error           <a href="/package/thinkful-ui">thinkful-ui</a>,
+34 error
+34 error           <a href="/package/testx-xlsx-parser">testx-xlsx-parser</a>,
+34 error                   <a href="/package/highlogger">highlogger</a>,
+34 error         <a href="/browse/depended/moment">and more</a>
+34 error     </p>
+34 error
+34 error   <script type="application/ld+json">
+34 error     {
+34 error       "@context": "http://schema.org",
+34 error       "@type": "SoftwareApplication",
+34 error       "name": "moment",
+34 error       "description": "Parse, validate, manipulate, and display dates",
+34 error       "url": "https://www.npmjs.com/package/moment",
+34 error       "keywords": "ender,l10n,i18n,validate,format,parse,time,date,moment",
+34 error       "applicationCategory": "DeveloperApplication",
+34 error       "offers": {
+34 error          "@type": "Offer",
+34 error          "price": "0.00"
+34 error       }
+34 error     }
+34 error   </script>
+34 error
+34 error     <div class="hiring-container" data-template="sidebar"></div>
+34 error
+34 error </div>
+34 error
+34 error
+34 error   </div>
+34 error
+34 error   <footer>
+34 error
+34 error     <div class="container">
+34 error
+34 error
+34 error         <ul class="columnar">
+34 error           <li>
+34 error             <h3>You Need Help</h3>
+34 error             <ul class="links">
+34 error               <li><a href="https://docs.npmjs.com">Documentation</a></li>
+34 error               <li><a href="/support">Support / Contact Us</a></li>
+34 error               <li><a href="http://status.npmjs.org/">Registry Status</a></li>
+34 error               <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+34 error               <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+34 error               <li><a href="/security">Security</a></li>
+34 error             </ul>
+34 error           </li>
+34 error
+34 error           <li>
+34 error             <h3>About npm</h3>
+34 error             <ul class="links">
+34 error               <li><a href="/about">About npm, Inc</a></li>
+34 error               <li><a href="/jobs">Jobs</a></li>
+34 error               <li><a href="/private-modules">npm private modules</a></li>
+34 error               <li><a href="http://blog.npmjs.org">Blog</a></li>
+34 error               <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+34 error               <li><a href="https://github.com/npm">GitHub</a></li>
+34 error             </ul>
+34 error           </li>
+34 error
+34 error           <li>
+34 error             <h3>Legal Stuff</h3>
+34 error             <ul class="links">
+34 error               <li><a href="/policies/conduct">Code of Conduct</a></li>
+34 error               <li><a href="/policies/disputes">Package Name Disputes</a></li>
+34 error               <li><a href="/policies/npm-license">npm License</a></li>
+34 error               <li><a href="/policies/privacy">Privacy Policy</a></li>
+34 error               <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
+34 error               <li><a href="/policies/">Other policies</a></li>
+34 error             </ul>
+34 error           </li>
+34 error         </ul>
+34 error
+34 error
+34 error     </div>
+34 error
+34 error     <div class="container centered">
+34 error       <a href="/" id="npm-loves-you">
+34 error         npm loves you
+34 error       </a>
+34 error     </div>
+34 error
+34 error   </footer>
+34 error
+34 error   <script defer src="/static/js/vendor.min.76ac749e.js"></script>
+34 error </body>
+34 error </html>
+34 error
+34 error <!-- pid=10095 0767cc7a6f370f08081b0f08b1a7b746edc31063 https://www.npmjs.com www-9-west.internal.npmjs.com  -->
+35 error If you need help, you may report this error at:
+35 error     <http://github.com/npm/npm/issues>
+36 verbose exit [ 1, true ]
